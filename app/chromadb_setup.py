@@ -1,16 +1,12 @@
-# app/chromadb_setup.py
 import sys
 __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
-# Now you can import ChromaDB after making the swap
 from chromadb import Client
 from chromadb.config import Settings
 import json
 import os
 from app.embeddings import get_embedding
 
-# Initialize ChromaDB Client
 client = Client(Settings())
 collection = client.get_or_create_collection("medical_documents")
 
@@ -23,15 +19,14 @@ def load_data():
     ids = []
     texts = []
     embeddings = []
-    metadatas = []  # Create a list to store metadata
+    metadatas = [] 
     
     for doc in documents:
         ids.append(doc["id"])
         texts.append(doc["text"])
         embeddings.append(get_embedding(doc["text"]))
-        metadatas.append({"title": doc.get("title", "Untitled")})  # Add metadata, modify as needed
+        metadatas.append({"title": doc.get("title", "Untitled")})  
     
-    # Pass the ids, texts, embeddings, and metadata as separate lists
     collection.add(ids=ids, documents=texts, embeddings=embeddings, metadatas=metadatas)
     print("Data loaded into ChromaDB.")
 
