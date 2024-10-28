@@ -57,6 +57,7 @@ This project demonstrates a robust retrieval system using ChromaDB for accurate 
 ### 📝 Example Queries
 
 Here are some sample queries to get you started:
+
 💊 **"Type 2 diabetes treatment"**  
    - To retrieve comprehensive treatment plans for managing Type 2 diabetes, including medication, dietary changes, and lifestyle recommendations.
 
