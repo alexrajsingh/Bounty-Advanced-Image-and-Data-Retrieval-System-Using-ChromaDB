@@ -57,9 +57,21 @@ This project demonstrates a robust retrieval system using ChromaDB for accurate 
 ### 📝 Example Queries
 
 Here are some sample queries to get you started:
-- 💊 **"Type 2 diabetes treatment"**
-- ❤️ **"Heart disease symptoms"**
-- 🩺 **"Hypertension case study"**
+💊 **"Type 2 diabetes treatment"**  
+   - To retrieve comprehensive treatment plans for managing Type 2 diabetes, including medication, dietary changes, and lifestyle recommendations.
+
+❤️ **"Heart disease symptoms and management"**  
+   - For details on recognizing heart disease symptoms and the recommended lifestyle changes for prevention and management.
+
+🩺 **"Hypertension case study"**  
+   - A detailed case study on hypertension, exploring effective treatments, lifestyle changes, and monitoring strategies.
+
+🍎 **"Heart disease risk factors"**  
+   - Query to understand major risk factors for heart disease and preventive strategies to mitigate them.
+
+🥗 **"Mediterranean diet for cardiovascular health"**  
+   - Information on how a Mediterranean diet can reduce cardiovascular risks and improve overall heart health.
+You can add more data set to  data section and query it.
 
 ## 🎥 Core Features Demo Video
 
